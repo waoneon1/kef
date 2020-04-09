@@ -888,7 +888,6 @@ section {
 --------------------------------------------------------------*/
 .our-expertise {
 	background-color: #FFF;
-	padding: 40px;
 }
 
 .our-expertise .row {
@@ -934,7 +933,6 @@ section {
 --------------------------------------------------------------*/
 .our-partners {
 	background-color: #f6f6f6;
-	padding: 40px;
 }
 
 .our-partners .content-item {
@@ -976,7 +974,6 @@ section {
 --------------------------------------------------------------*/
 .what-is-our-program {
 	background-color: #FFF;
-	padding: 40px;
 }
 
 .what-is-our-program .row {
@@ -1133,7 +1130,6 @@ section {
 --------------------------------------------------------------*/
 .join-us {
 	background-color: #f6f6f6;
-	padding: 40px;
 }
 
 .join-us .row {
@@ -1746,11 +1742,41 @@ color: #777;
 /* Footer Section*/
 
 nav.nav-menu.float-right.d-none.d-lg-block li.active {
-  background-color: #5d98fb;
+  /*background-color: #5d98fb;*/
 }
+nav.nav-menu.float-right.d-none.d-lg-block li:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  position: absolute;
+  left: 5%;
+  bottom: 2px;
 
-nav.nav-menu.float-right.d-none.d-lg-block li.active a {
-  color: white;
+  -webkit-transition: width 0.2s;
+  -moz-transition: width 0.2s;
+  -o-transition: width 0.2s;
+  transition: width 0.2s;
+
+  background: #439df5;
+  background: -moz-linear-gradient(90deg, #439df5 0%, #5167f6 100%);
+  background: -webkit-linear-gradient(90deg, #439df5 0%, #5167f6 100%);
+  background: linear-gradient(90deg, #439df5 0%, #5167f6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#439df5", endColorstr="#5167f6", GradientType=1);
+}
+nav.nav-menu.float-right.d-none.d-lg-block li.active:after,
+nav.nav-menu.float-right.d-none.d-lg-block li:hover:after {
+  content: '';
+  height: 2px;
+  width: 90%;
+  position: absolute;
+  left: 5%;
+  bottom: 2px;
+
+  background: #439df5;
+  background: -moz-linear-gradient(90deg, #439df5 0%, #5167f6 100%);
+  background: -webkit-linear-gradient(90deg, #439df5 0%, #5167f6 100%);
+  background: linear-gradient(90deg, #439df5 0%, #5167f6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#439df5", endColorstr="#5167f6", GradientType=1);
 }
 
 /* nav.nav-menu li::after {
