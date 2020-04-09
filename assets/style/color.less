@@ -1,0 +1,136 @@
+// main: ../css/style.less
+
+/* Color
+=================================================== */
+.u- {
+    &color {
+      &-gamora { color: #54D3A7 }
+      &-beast { color: #008EDC }
+      &-iceman { color: #B2DDF5 }
+      &-blackwidow { color: #002740 }
+      &-panther { color: #64727B }
+      &-colossus { color: #FAFAFA }
+      &-gwen { color: #FFFFFF }
+    }
+    &bg { 
+        &-hulk, &-hulk.u-diagonal-bg:after {
+          background: rgb(51,203,181);
+          background: -moz-linear-gradient(90deg, rgba(51,203,181,1) 0%, rgba(190,237,123,1) 100%);
+          background: -webkit-linear-gradient(90deg, rgba(51,203,181,1) 0%, rgba(190,237,123,1) 100%);
+          background: linear-gradient(90deg, rgba(51,203,181,1) 0%, rgba(190,237,123,1) 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#33cbb5",endColorstr="#beed7b",GradientType=1);
+        }
+        // hulk hover
+        // background: rgb(51,203,181);
+        // background: -moz-linear-gradient(90deg, rgba(51,203,181,1) 0%, rgba(183,235,126,1) 70%, rgba(190,237,123,1) 100%);
+        // background: -webkit-linear-gradient(90deg, rgba(51,203,181,1) 0%, rgba(183,235,126,1) 70%, rgba(190,237,123,1) 100%);
+        // background: linear-gradient(90deg, rgba(51,203,181,1) 0%, rgba(183,235,126,1) 70%, rgba(190,237,123,1) 100%);
+        // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#33cbb5",endColorstr="#beed7b",GradientType=1);
+        &-gamora, &-gamora.u-diagonal-bg:after { background-color: #54D3A7 }
+        &-capt, &-capt.u-diagonal-bg:after {
+          background: rgb(0,142,220);
+          background: -moz-linear-gradient(90deg, rgba(0,142,220,1) 0%, rgba(122,223,255,1) 100%);
+          background: -webkit-linear-gradient(90deg, rgba(0,142,220,1) 0%, rgba(122,223,255,1) 100%);
+          background: linear-gradient(90deg, rgba(0,142,220,1) 0%, rgba(122,223,255,1) 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#008edc",endColorstr="#7adfff",GradientType=1);
+        }
+        // capt hover
+        // background: rgb(20,155,226);
+        // background: -moz-linear-gradient(90deg, rgba(20,155,226,1) 0%, rgba(116,219,253,1) 70%, rgba(122,223,255,1) 100%);
+        // background: -webkit-linear-gradient(90deg, rgba(20,155,226,1) 0%, rgba(116,219,253,1) 70%, rgba(122,223,255,1) 100%);
+        // background: linear-gradient(90deg, rgba(20,155,226,1) 0%, rgba(116,219,253,1) 70%, rgba(122,223,255,1) 100%);
+        // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#149be2",endColorstr="#7adfff",GradientType=1);
+       
+        &-beast, &-beast.u-diagonal-bg:after { background-color: #008EDC }
+        &-iceman, &-iceman.u-diagonal-bg:after { background-color: #B2DDF5 }
+        &-blackwidow, &-blackwidow.u-diagonal-bg:after { background-color: #002740 }
+        &-panther, &-panther.u-diagonal-bg:after { background-color: #64727B }
+        &-colossus, &-colossus.u-diagonal-bg:after { background-color: #FAFAFA }
+        &-gwen, &-gwen.u-diagonal-bg:after { background-color: #FFFFFF }
+       
+        &-beast, &-beast.u-diagonal-bg:before { background-color: #008EDC }
+        &-iceman, &-iceman.u-diagonal-bg:before { background-color: #B2DDF5 }
+        &-blackwidow, &-blackwidow.u-diagonal-bg:before { background-color: #002740 }
+        &-panther, &-panther.u-diagonal-bg:before { background-color: #64727B }
+        &-colossus, &-colossus.u-diagonal-bg:before { background-color: #FAFAFA }
+        &-gwen, &-gwen.u-diagonal-bg:before { background-color: #FFFFFF }
+
+        &-capt.u-diagonal-bg { background: transparent }
+        &-hulk.u-diagonal-bg { background: transparent }
+        &-gamora.u-diagonal-bg { background: transparent }
+        &-capt.u-diagonal-bg { background: transparent }
+        &-beast.u-diagonal-bg { background: transparent }
+        &-iceman.u-diagonal-bg { background: transparent }
+        &-blackwidow.u-diagonal-bg { background: transparent }
+        &-panther.u-diagonal-bg { background: transparent }
+        &-colossus.u-diagonal-bg { background: transparent }
+        &-gwen.u-diagonal-bg { background: transparent }
+    }
+}
+
+.u- {
+    &diagonal-bg {
+        padding-top: 100px!important;
+        padding-bottom: 100px!important;
+        &:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: -60px;
+            z-index: -1;
+            -webkit-transform: skewY(-12deg);
+            -moz-transform: skewY(-12deg);
+            -ms-transform: skewY(-12deg);
+            -o-transform: skewY(-12deg);
+            transform: skewY(-12deg);
+        }
+        &--w90:after {
+            height: 92%;
+        }
+        &--top-250:after {
+            top: 250px;
+        }
+        &--top-150:after {
+            top: 150px;
+        }
+        &--top-150:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            z-index: -1;
+            -webkit-transform: skewY(0deg);
+            -moz-transform: skewY(0deg);
+            -ms-transform: skewY(0deg);
+            -o-transform: skewY(0deg);
+            transform: skewY(0deg);
+        }
+    }
+}
+
+.u- {
+    &bg-pipe {
+        &:before {
+            content: '';
+            position: absolute;
+            background-image: url(img/pipe.svg);
+            width: 100%;
+            height: 100%;
+            top: -45px;
+            background-size: auto;
+            background-position: center;
+            z-index: 0;
+        }
+    }
+}
+
+@media (max-width: 1199px) {}
+@media (max-width: 991px) {}
+@media (max-width: 767px) {
+    .u-diagonal-bg {
+        padding-top: 50px!important;
+        padding-bottom: 100px!important;
+    }
+}

@@ -1,0 +1,86 @@
+// main: ../css/style.less
+
+.c-footer {
+    border-top: 2px #EFEFEF solid;
+    color: #64727B;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    h4 {
+        font-family: 'Muli', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        color: #64727B;
+        margin-bottom: 10px;
+    }
+    p, a {  
+        font-family: 'Muli', sans-serif;
+        font-size: 12px; 
+        font-weight: 400;
+        color: #64727B;
+        margin: 0;
+        padding: 0;
+        
+    }
+    a:hover {
+        color: #008EDC;
+        text-decoration: none;
+    }
+    &__nav {
+        li {
+            a { 
+                color: #64727B; 
+                font-size: 12px;    
+            }
+        }
+    }
+    &__link {
+        li {
+            margin-right: 10px;
+        }
+    }
+}
+
+.footer-diagonal {
+    position: relative;
+    min-height: 305px;
+}
+.footer-diagonal:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 360px;
+    background-color: #fafafa;
+    top: -210px;
+    z-index: -1;
+    -webkit-transform: skewY(-12deg);
+    -moz-transform: skewY(-12deg);
+    -ms-transform: skewY(-12deg);
+    -o-transform: skewY(-12deg);
+    transform: skewY(-12deg);
+}
+.footer-diagonal:after {
+    // content: '';
+    // position: absolute;
+    // width: 100%;
+    // height: 108px;
+    // background-color: #fafafa;
+    // bottom: 0;
+    // z-index: -1;
+}
+
+
+@media (max-width: 1199px) {
+
+}
+@media (max-width: 991px) {
+
+}
+@media (max-width: 767px) {
+    .c-footer {
+        padding-top: 30px;
+        padding-bottom: 0;
+    }
+}
+@media (max-width: 575px) {
+
+}
