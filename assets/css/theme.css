@@ -92,10 +92,20 @@ Template
   .title-section:after {
      height: 3px;
   }
+  body {
+    font-size: 18px;
+  }
+
 }
 /* ========= 
 Section 
 ========== */
+.section-hi {
+  height: calc(100vh - 70px)!important;
+}
+.section-min {
+  min-height: calc(100vh - 70px)!important;
+}
 .ch-ourteam {
   max-width: 700px;
   text-align: center;
@@ -117,7 +127,6 @@ Section
 
 .ch-expertise {
   padding-top: 40px;
-  padding-bottom: 150px;
 }
 .ch-expertise .exp-text,
 .ch-program .exp-text {
@@ -149,7 +158,11 @@ Section
 .ch-contact-info {
   padding-left: 40px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+  .ch-about-img {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
   #contact .social ul li {
     display: inline-block;
     margin: 0 5px;
@@ -157,6 +170,15 @@ Section
   .ch-contact-info {
     padding-left: 15px;
     margin-top: 50px;
+  }
+
+  .ch-expertise .exp-text,
+  .ch-program .exp-text {
+    font-size: 15px;
+  }
+  .ch-expertise .exp-img,
+  .ch-program .exp-img {
+    width: 90px;
   }
 }
 
@@ -191,7 +213,7 @@ SLIDER
   position: relative;
   display: flex;
   align-items: center;
-  width: 90%;
+  width: 93%;
   margin: auto;
 }
 .c-slider2__arrow-next,
@@ -235,6 +257,19 @@ SLIDER
   }
   .c-slider2__arrow-prev {
     left: -22px;
+  }
+  .c-card-slider2 img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .c-card-slider2 .slick-track {
+    display: flex;
+    align-items: center;
+  }
+  .ch-partner img, .ch-startup img {
+    /*padding:0;*/
+    padding-right: 0;
   }
 }
 
