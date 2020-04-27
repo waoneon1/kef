@@ -368,9 +368,15 @@ img {
   overflow: hidden;
 }
 
+#hero .carousel-item.carousel-item-bg2 h2,
+#hero .carousel-item.carousel-item-bg2 p {
+  color:#428bca;
+  max-width: 50%;
+}
+
 #hero .carousel-item::before {
   content: '';
-  background-color: rgba(13, 30, 45, 0.6);
+  /*background-color: rgba(13, 30, 45, 0.6);*/
   position: absolute;
   height: 100%;
   width: 100%;
@@ -380,6 +386,10 @@ img {
   bottom: 0;
   overflow: hidden;
 }
+#hero .carousel-control-prev-icon.icofont-rounded-left:before {
+  color: #676767;
+}
+
 
 #hero .carousel-container {
   display: flex;
@@ -397,12 +407,41 @@ img {
   text-align: left;
 }
 
+#hero .carousel-inner .carousel-item {
+  transition-property: opacity;
+  background-position: center top;
+}
+
+/* khusus layar gede */
+@media (min-width: 1280px) {
+  #hero .carousel-inner .carousel-item.carousel-item-bg2 {
+    background-size: 100%;
+    background-position: top right!important;
+  }
+}
 @media (max-width: 992px) {
   #hero, #hero .carousel-item {
     height: calc(100vh - 70px);
   }
   #hero .carousel-content.container {
     padding: 0 50px;
+  }
+  #hero .carousel-item::before {
+    background-color: rgba(13, 30, 45, 0.6);
+  }
+  #hero .carousel-control-prev-icon.icofont-rounded-left:before {
+    color: #fff;
+  }
+  #hero .carousel-item.carousel-item-bg2 h2,
+  #hero .carousel-item.carousel-item-bg2 p {
+    color:#fff;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero .carousel-inner .carousel-item.carousel-item-bg2 {
+    background-position: top right;
   }
 }
 
@@ -420,11 +459,6 @@ img {
   color: #fff;
 }
 
-#hero .carousel-inner .carousel-item {
-  transition-property: opacity;
-  background-position: center top;
-}
-
 #hero .carousel-inner .carousel-item,
 #hero .carousel-inner .active.carousel-item-left,
 #hero .carousel-inner .active.carousel-item-right {
@@ -437,6 +471,7 @@ img {
   opacity: 1;
   transition: 0.5s;
 }
+
 
 #hero .carousel-inner .carousel-item-next,
 #hero .carousel-inner .carousel-item-prev,
@@ -457,7 +492,6 @@ img {
   width: auto;
   height: auto;
 }
-
 #hero .carousel-indicators li {
   cursor: pointer;
 }
