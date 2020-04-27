@@ -74,8 +74,8 @@
 
         //console.log(refElement);
         if (refElement.position().top <= scrollPos + 70 && refElement.position().top + refElement.height() > scrollPos  + 70) {
-            console.log(refElement.position().top <= scrollPos);
-            console.log(refElement.position().top + refElement.height() > scrollPos);
+            // console.log(refElement.position().top <= scrollPos);
+            // console.log(refElement.position().top + refElement.height() > scrollPos);
             // console.log(refElement.height());
             // console.log(scrollPos);
             $('.nav-menu ul li').removeClass("active");
