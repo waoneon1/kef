@@ -46,7 +46,7 @@ img {
   background: #428bca;
   color: #fff;
   transition: display 0.5s ease-in-out;
-  z-index: 99999;
+  z-index: 30;
 }
 
 .back-to-top i {
