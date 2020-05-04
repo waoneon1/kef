@@ -454,6 +454,31 @@ img {
   #hero .carousel-inner .carousel-item.carousel-item-bg3 {
     background-position: top right;
   }
+  #hero .carousel-inner .carousel-item {
+    transition-property: opacity;
+    background-position: right -100px bottom!important;
+  }
+  #hero .carousel-content.container {
+    padding: 0 50px;
+    margin-top: 140px;
+  }
+  #hero .carousel-item.carousel-item-bg2 h2, 
+  #hero .carousel-item h2 {
+      margin-bottom: 10px;
+  }
+  #hero .btn-get-started {
+    margin-left: 0!important;
+  }
+  #hero .carousel-content.container {
+    margin-top: 120px;
+  }
+  #hero .btn-get-started {
+      margin: 10px 0;
+  }
+  #hero .carousel-control-next-icon, #hero .carousel-control-prev-icon
+  {
+      margin-top: 50px;
+  }
 }
 
 #hero h2 {
