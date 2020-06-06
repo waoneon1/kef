@@ -37,7 +37,7 @@ Template
 .title-section--join {
   margin-bottom: 60px;
 }
-.title-section--join:before {
+/*.title-section--join:before {
   content: 'How to Join : ';
   height: 40px;
   width: 100%;
@@ -46,7 +46,7 @@ Template
   text-align: left;
   bottom: -60px;
   color: white;
-}
+}*/
 
 .title-section li {
   color: #c8c8c8;
